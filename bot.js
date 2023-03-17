@@ -13,7 +13,7 @@ rtm.on('message', (event) => {
     if (event.type == 'message' && event.text != '' && event.subtype != 'message_changed') {
         console.log('message:', event.text);
 
-        if (event.text.indexOf('youtu') >= 0) {
+        if (event.text && event.text.indexOf('youtu') >= 0) {
             yt.findLink(event.text);
         }
     }
