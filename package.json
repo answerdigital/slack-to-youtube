@@ -1,4 +1,12 @@
 {
+  "name": "slack-to-youtube",
+  "version": "1.0.0",
+  "description": "Slack bot to listen for YouTube links and post them to a playlist",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "license": "MIT",
   "dependencies": {
     "@slack/rtm-api": "^6.1.0",
     "googleapis": "^113.0.0",
