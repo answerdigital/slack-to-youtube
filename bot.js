@@ -11,7 +11,7 @@ const yt = new YTClient(ytCredentials, process.env.YOUTUBE_PLAYLIST);
 const rtm = new RTMClient(process.env.SLACK_TOKEN);
 
 rtm.on('message', (event) => {
-    if (event.type == 'message' && event.text != '' && event.subtype != 'message_changed') {
+    if (event.type == 'message' && event.text != '' && !event.subtype) {
         console.log('message:', event.text);
 
         if (event.text && event.text.indexOf('youtu') >= 0) {
