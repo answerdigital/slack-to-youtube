@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { RTMClient } = require('@slack/rtm-api');
 const YTClient = require('./lib/youtube');
 

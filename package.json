@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@slack/rtm-api": "^6.1.0",
+    "dotenv": "^16.0.3",
     "googleapis": "^113.0.0",
     "open": "^8.4.2"
   }
