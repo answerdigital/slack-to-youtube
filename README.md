@@ -18,7 +18,9 @@ Create a [Google project](https://console.developers.google.com/) and add the [Y
 
 Create an OAuth consent screen. If you want others outside your organisation to use it, you'll need to publish the app.
 
-Create an OAuth client ID (Desktop app or Web application) and set the credentials as the `YOUTUBE_CREDENTIALS` secret:
+Create an OAuth client ID (Web application type) and set the redirect URI to https://your-slack-app.fly.dev.
+
+Download the credentials and set them as the `YOUTUBE_CREDENTIALS` secret:
 
 ```bash
 flyctl secrets set "YOUTUBE_CREDENTIALS=$(< credentials.json)"
