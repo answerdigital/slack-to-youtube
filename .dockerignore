@@ -3,3 +3,6 @@ Dockerfile
 node_modules
 .git
 npm-debug.log
+config/*.json
+LICENSE
+README.md

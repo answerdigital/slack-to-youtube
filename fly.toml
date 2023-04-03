@@ -1,1 +1,11 @@
 app = "slack-to-youtube"
+
+[env]
+  APP_ENV = "production"
+
+[[services]]
+  internal_port = 8000
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = "443"
