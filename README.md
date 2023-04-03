@@ -34,4 +34,5 @@ flyctl secrets set "YOUTUBE_PLAYLIST=..."
 
 ## Running the bot
 
-Deploy the app with `flyctl deploy` and invite the Slack bot to any channels.
+Deploy the app with `flyctl deploy` and visit https://your-slack-app.fly.dev to authorise the app with Google.
+You can then invite the Slack bot to any channels.
